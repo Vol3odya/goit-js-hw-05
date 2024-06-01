@@ -1,8 +1,5 @@
 const getUserNames=(users) =>{
-    let rez=[];
-  for (let i = 0; i < users.length; i+=1){
-        rez[i]=users[i].name;
-    }
+    const rez=users.map((user)=>user.name);
     return rez;
 };
 console.log(
